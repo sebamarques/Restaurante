@@ -15,7 +15,10 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },
-  "scripts": {
+  "homepage": "https://sebamarques.github.io/Restaurante",
+    "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
