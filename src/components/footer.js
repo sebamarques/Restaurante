@@ -7,11 +7,13 @@ function Footer(){
     return(
         <>
         <footer>
-            <ul>
-                {links.map(link=>(
-                    <li><a href={link.url}>{link.nombre}</a></li>
-                ))}
-            </ul>
+            <div className="footer">
+                <ul>
+                    {links.map(link=>(
+                        <li><a href={link.url}>{link.nombre}</a></li>
+                    ))}
+                </ul>
+            </div>
         </footer>
         </>
     )

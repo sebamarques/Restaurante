@@ -3,9 +3,9 @@ import logo from "../assets/logo.jpg"
 function Nav(){
     let links = [
         {id:0,url:"/",nombre:"Inicio"},
-        {id:1,url:"/info",nombre:"Sobre nosotros"},
+        //{id:1,url:"/info",nombre:"Sobre nosotros"},
         {id:2,url:"/reservas",nombre:"Reservas"},
-        {id:3,url:"/delivery",nombre:"Delivery"},
+        //{id:3,url:"/delivery",nombre:"Delivery"},
         {id:4,url:"/menu", nombre:"Menu"},
         {id:5,url:"/contacto", nombre:"Contacto"}
     ]
