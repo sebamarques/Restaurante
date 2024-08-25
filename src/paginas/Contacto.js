@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import "../estilos/Contacto.css";
 
 const Contacto = () => {
   // Definir el esquema de validación con Yup
@@ -11,40 +12,44 @@ const Contacto = () => {
   });
 
   return (
-    <Formik
-      initialValues={{ name: '', email: '', password: '' }}
-      validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        console.log('Formulario enviado', values);
-        setSubmitting(false); // Para simular el envío
-      }}
-    >
-      {({ isSubmitting }) => (
-        <Form>
-          <div>
-            <label htmlFor="name">Nombre</label>
-            <Field type="text" name="name" />
-            <ErrorMessage name="name" component="div" style={{ color: 'red' }} />
-          </div>
-          
-          <div>
-            <label htmlFor="email">Correo Electrónico</label>
-            <Field type="email" name="email" />
-            <ErrorMessage name="email" component="div" style={{ color: 'red' }} />
-          </div>
-          
-          <div>
-            <label htmlFor="password">Contraseña</label>
-            <Field type="password" name="password" />
-            <ErrorMessage name="password" component="div" style={{ color: 'red' }} />
-          </div>
-          
-          <button type="submit" disabled={isSubmitting}>
-            Registrarse
-          </button>
-        </Form>
-      )}
-    </Formik>
+    <div className="form-container">
+      <Formik
+        initialValues={{ name: '', email: '', password: '' }}
+        validationSchema={validationSchema}
+        onSubmit={(values, { setSubmitting }) => {
+          console.log('Formulario enviado', values);
+          setSubmitting(false); // Para simular el envío
+        }}
+      >
+        {({ isSubmitting }) => (
+          <Form className="form">
+            <h2>Contacto</h2>
+            
+            <div>
+              <label htmlFor="name">Nombre</label>
+              <Field type="text" name="name" />
+              <ErrorMessage name="name" component="div" className="error-message" />
+            </div>
+            
+            <div>
+              <label htmlFor="email">Correo Electrónico</label>
+              <Field type="email" name="email" />
+              <ErrorMessage name="email" component="div" className="error-message" />
+            </div>
+            
+            <div>
+              <label htmlFor="password">Contraseña</label>
+              <Field type="password" name="password" />
+              <ErrorMessage name="password" component="div" className="error-message" />
+            </div>
+            
+            <button type="submit" disabled={isSubmitting}>
+              Registrarse
+            </button>
+          </Form>
+        )}
+      </Formik>
+    </div>
   );
 };
 

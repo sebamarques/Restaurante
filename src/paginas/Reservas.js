@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import "../estilos/Reservas.css";
 
 const ReservationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -16,7 +17,7 @@ const ReservationForm = () => {
   });
 
   return (
-    <div>
+    <div className="form-container">
       {!isSubmitted ? (
         <Formik
           initialValues={{
@@ -40,11 +41,13 @@ const ReservationForm = () => {
           }}
         >
           {({ isSubmitting }) => (
-            <Form>
+            <Form className="form">
+              <h1>Reserva una Mesa</h1>
+              
               <div>
                 <label htmlFor="people">Número de personas</label>
                 <Field type="number" name="people" min="2" />
-                <ErrorMessage name="people" component="div" style={{ color: 'red' }} />
+                <ErrorMessage name="people" component="div" className="error-message" />
               </div>
 
               <div>
@@ -53,25 +56,25 @@ const ReservationForm = () => {
                   <option value="inside">Adentro</option>
                   <option value="outside">Afuera</option>
                 </Field>
-                <ErrorMessage name="location" component="div" style={{ color: 'red' }} />
+                <ErrorMessage name="location" component="div" className="error-message" />
               </div>
 
               <div>
                 <label htmlFor="email">Correo Electrónico</label>
                 <Field type="email" name="email" />
-                <ErrorMessage name="email" component="div" style={{ color: 'red' }} />
+                <ErrorMessage name="email" component="div" className="error-message" />
               </div>
 
               <div>
                 <label htmlFor="firstName">Nombre</label>
                 <Field type="text" name="firstName" />
-                <ErrorMessage name="firstName" component="div" style={{ color: 'red' }} />
+                <ErrorMessage name="firstName" component="div" className="error-message" />
               </div>
 
               <div>
                 <label htmlFor="lastName">Apellido</label>
                 <Field type="text" name="lastName" />
-                <ErrorMessage name="lastName" component="div" style={{ color: 'red' }} />
+                <ErrorMessage name="lastName" component="div" className="error-message" />
               </div>
 
               <button type="submit" disabled={isSubmitting}>
@@ -81,7 +84,7 @@ const ReservationForm = () => {
           )}
         </Formik>
       ) : (
-        <div>
+        <div className="success-message">
           <h1>¡Reserva Exitosa!</h1>
           <p>Gracias por reservar con nosotros. Te esperamos pronto.</p>
         </div>
