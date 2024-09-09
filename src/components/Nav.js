@@ -4,7 +4,7 @@ import "../estilos/Nav.css"
 
 function Nav() {
     let links = [
-        {id: 0, url: "/Restaurante", nombre: "Inicio"},
+        {id: 0, url: "/", nombre: "Inicio"},
         //{id: 1, url: "Info", nombre: "Sobre Nosotros"},
         {id: 2, url: "/Reservas", nombre: "Reservas"},
         //{id: 3, url: "/Delivery", nombre: "Delivery"},

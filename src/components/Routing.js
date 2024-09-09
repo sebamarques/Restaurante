@@ -8,7 +8,7 @@ import Contacto from "../paginas/Contacto"
 export default function Routing() {
   return (
     <Routes>
-      <Route path="/Restaurante" element={<Inicio />} />
+      <Route path="/" element={<Inicio />} />
       <Route path="/Info" element={<Informacion/>}/>
       <Route path="/Reservas" element={<Reservacion/>}/>
       <Route path="/Delivery" element={<Delivery />}/>
