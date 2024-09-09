@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Restaurante/static/css/main.010e4d62.css",
-    "main.js": "/Restaurante/static/js/main.b06cf129.js",
-    "static/js/787.d4aba7ab.chunk.js": "/Restaurante/static/js/787.d4aba7ab.chunk.js",
-    "static/media/food1.png": "/Restaurante/static/media/food1.cf22ea3785b35d4eea84.png",
-    "static/media/greek-salad.webp": "/Restaurante/static/media/greek-salad.0630522a827a5188a66d.webp",
-    "static/media/food2.jpeg": "/Restaurante/static/media/food2.0dcd90e2c8fd640454bf.jpeg",
-    "static/media/menu.webp": "/Restaurante/static/media/menu.9b7e092be47f16ae049f.webp",
-    "static/media/food3.jpeg": "/Restaurante/static/media/food3.90486b3529cd6d885d9a.jpeg",
-    "static/media/logo.jpg": "/Restaurante/static/media/logo.d4cae6fac8384c2dae04.jpg",
-    "index.html": "/Restaurante/index.html",
-    "main.010e4d62.css.map": "/Restaurante/static/css/main.010e4d62.css.map",
-    "main.b06cf129.js.map": "/Restaurante/static/js/main.b06cf129.js.map",
-    "787.d4aba7ab.chunk.js.map": "/Restaurante/static/js/787.d4aba7ab.chunk.js.map"
+    "main.css": "/restaurante/static/css/main.010e4d62.css",
+    "main.js": "/restaurante/static/js/main.35718fb1.js",
+    "static/js/787.d4aba7ab.chunk.js": "/restaurante/static/js/787.d4aba7ab.chunk.js",
+    "static/media/food1.png": "/restaurante/static/media/food1.cf22ea3785b35d4eea84.png",
+    "static/media/greek-salad.webp": "/restaurante/static/media/greek-salad.0630522a827a5188a66d.webp",
+    "static/media/food2.jpeg": "/restaurante/static/media/food2.0dcd90e2c8fd640454bf.jpeg",
+    "static/media/menu.webp": "/restaurante/static/media/menu.9b7e092be47f16ae049f.webp",
+    "static/media/food3.jpeg": "/restaurante/static/media/food3.90486b3529cd6d885d9a.jpeg",
+    "static/media/logo.jpg": "/restaurante/static/media/logo.d4cae6fac8384c2dae04.jpg",
+    "index.html": "/restaurante/index.html",
+    "main.010e4d62.css.map": "/restaurante/static/css/main.010e4d62.css.map",
+    "main.35718fb1.js.map": "/restaurante/static/js/main.35718fb1.js.map",
+    "787.d4aba7ab.chunk.js.map": "/restaurante/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.010e4d62.css",
-    "static/js/main.b06cf129.js"
+    "static/js/main.35718fb1.js"
   ]
 }
