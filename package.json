@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },
-  "homepage": "https://sebamarques.github.io/Restaurante",
+  "homepage": "https://sebamarques.github.io/restaurante",
     "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

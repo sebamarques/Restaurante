@@ -8,12 +8,12 @@ import Contacto from "../paginas/Contacto"
 export default function Routing() {
   return (
     <Routes>
-      <Route path="/" element={<Inicio />} />
-      <Route path="/Info" element={<Informacion/>}/>
-      <Route path="/Reservas" element={<Reservacion/>}/>
-      <Route path="/Delivery" element={<Delivery />}/>
-      <Route path="/Menu" element={<Menu/>} />
-      <Route path="/Contacto" element={<Contacto/>} />
+      <Route path="/inicio" element={<Inicio />} />
+      <Route path="/info" element={<Informacion/>}/>
+      <Route path="/reservas" element={<Reservacion/>}/>
+      <Route path="/delivery" element={<Delivery />}/>
+      <Route path="/menu" element={<Menu/>} />
+      <Route path="/contacto" element={<Contacto/>} />
     </Routes>
   );
 }
